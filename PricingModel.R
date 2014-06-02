@@ -87,12 +87,12 @@ PricingModel <- setRefClass("PricingModel",
         stop("Warning - elasticites and multipliers files might not have been loaded\n")
       
       # imports skus, facts and promofacts from a csv file
-      import <- read.csv(filename);
+      import <- read.csv(filename, stringsAsFactors = FALSE);
       
-      import$sku.name <- as.character(import$sku.name)
-      import$fact.type <- as.character(import$fact.type)
-      import$fact.name <- as.character(import$fact.name)
-      import$fact.id <- as.character(import$fact.id)
+#       import$sku.name <- as.character(import$sku.name)
+#       import$fact.type <- as.character(import$fact.type)
+#       import$fact.name <- as.character(import$fact.name)
+#       import$fact.id <- as.character(import$fact.id)
       
       skuName = ""
       sku <- NULL

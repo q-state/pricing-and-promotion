@@ -1,9 +1,9 @@
 pm = PricingModel$new("Test Model")
-pm$importBasePriceElasticities("./Support Files/baseprice-elasticities.csv")
-pm$importTPRElasticities("./Support Files/tpr-elasticities.csv")
-pm$importPromoMultipliers("./Support Files/promo-multipliers.csv")
+pm$importBasePriceElasticities("./Documents/R Projects/pricing/Support Files/baseprice-elasticities.csv")
+pm$importTPRElasticities("./Documents/R Projects/pricing/Support Files/tpr-elasticities.csv")
+pm$importPromoMultipliers("./Documents/R Projects/pricing/Support Files/promo-multipliers.csv")
 
-pm$import("~/Documents/R Projects/test-import.csv")
+pm$import("./Documents/R Projects/pricing/Support Files/test-import.csv")
 
 pm$skus[[1]]$facts$cprice$sim = 3
 pm$skus[[1]]$facts$wprice$sim = 2.50
